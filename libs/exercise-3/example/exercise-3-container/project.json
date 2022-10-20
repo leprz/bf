@@ -1,0 +1,27 @@
+{
+  "name": "exercise-3-example-exercise-container",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/exercise-3/example/exercise-3-container/src",
+  "prefix": "bf",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/exercise-3/example/exercise-3-container"],
+      "options": {
+        "jestConfig": "libs/exercise-3/example/exercise-3-container/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/exercise-3/example/exercise-3-container/**/*.ts",
+          "libs/exercise-3/example/exercise-3-container/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -16,6 +16,24 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bf/exercise-3/example/card-ui": [
+        "libs/exercise-3/example/card-ui/src/index.ts"
+      ],
+      "@bf/exercise-3/example/exercise-3-container": [
+        "libs/exercise-3/example/exercise-3-container/src/index.ts"
+      ],
+      "@bf/exercise-3/step-1/customer": [
+        "libs/exercise-3/step-1/customer/src/index.ts"
+      ],
+      "@bf/exercise-3/step-1/product": [
+        "libs/exercise-3/step-1/product/src/index.ts"
+      ],
+      "@bf/exercise-3/step-2/customer": [
+        "libs/exercise-3/step-2/customer/src/index.ts"
+      ],
+      "@bf/exercise-3/step-2/product": [
+        "libs/exercise-3/step-2/product/src/index.ts"
+      ],
       "@bf/exercises": ["libs/exercises/src/index.ts"]
     }
   },

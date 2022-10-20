@@ -1,0 +1,24 @@
+<article class="card-ui">
+  <figure>
+    <img [src]="_card.teaser.src" [alt]="_card.teaser.alt">
+  </figure>
+  <div class="card-ui__footer">
+    <div class="card-ui__add-to-favourites">
+      <ion-icon name="heart-outline"></ion-icon>
+    </div>
+    <ul class="card-ui__prices">
+      <li class="card-ui__list-price">
+        {{ _card.regularPrice | currency: _card.currencyCode }}
+      </li>
+      <li
+        class="card-ui__customer-price"
+        *ngIf="_card.discountPrice"
+      >
+        {{ _card.discountPrice | currency: _card.currencyCode }}
+      </li>
+    </ul>
+    <div class="card-ui__add-to-cart">
+      <ion-icon name="cart-outline"></ion-icon>
+    </div>
+  </div>
+</article>

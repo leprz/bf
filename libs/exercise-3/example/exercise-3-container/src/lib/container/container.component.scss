@@ -1,0 +1,21 @@
+bf-card-ui {
+  max-width: 20rem;
+  display: block;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  h1 {
+    width: 100%;
+  }
+  justify-content: center;
+}
+
+.container__cards {
+  display: flex;
+  flex: 1 1 25%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
